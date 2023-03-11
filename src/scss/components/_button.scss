@@ -1,3 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.ds-btn{
+    border-radius: 8px;
+    border: none;
+    padding: 0.95rem 1.75rem;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all $duration ease-in-out;
+}
+.ds-btn--white{
+    background-color: $white;
+    color: $dark-grey;
+    &:hover{
+        background-color: $light-peach;
+        color: $white;
+    }
+}

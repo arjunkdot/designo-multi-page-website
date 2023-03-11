@@ -1,3 +1,38 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.ds-header__navbar{
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    height: 130px;
+}
+.ds-header__navbar-logo {
+  width: 192px;
+  height: auto;
+}
+.ds-header__nav-items {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+  display: flex;
+}
+.ds-header__nav-item {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 2rem;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.ds-header__nav-link {
+  color: $dark-grey;
+  border-bottom: 1px solid transparent;
+
+  &:hover{
+    color: $dark-grey;
+    text-decoration: none;
+    border-bottom: 1px solid $dark-grey;
+  }
+}

@@ -19,17 +19,23 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 /**
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $peach;
   text-decoration: none;
+  transition: all $duration ease-in-out;
 
   @include on-event {
-    color: $text-color;
-    text-decoration: underline;
+    color: $light-peach;
+    text-decoration: none;
+    transition: all $duration ease-in-out;
   }
 }

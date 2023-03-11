@@ -2,6 +2,23 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  color: $dark-grey;
+  font: normal 100% / 1.4 $text-font-stack;
+}
+
+.ds-heading{
+  font-weight: 500;
+}
+.ds-heading--h1{
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.ds-text--white{
+  color: $white;
+}
+.ds-text--body{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
 }

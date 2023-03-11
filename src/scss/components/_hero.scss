@@ -1,0 +1,28 @@
+.ds-hero{
+    border-radius: 15px;
+    background-color: $peach;
+    position: relative;
+    overflow: hidden;
+}
+.ds-hero--home{
+    height: 640px;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    background-image: url('/assets/home/desktop/bg-pattern-hero-home.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-bottom: 8rem;
+}
+.ds-hero__title-home{
+    max-width: 60%;
+}
+.ds-hero__lead{
+    max-width: 45%;
+    margin-bottom: 2.5rem;
+}
+.ds-hero__image-home{
+    position: absolute;
+    right: 0;
+    top: -40px;
+}

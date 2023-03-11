@@ -3,12 +3,12 @@
 // -----------------------------------------------------------------------------
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
 
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Jost', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -17,26 +17,31 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 
 
-
-/// Copy text color
+/// Peach color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$peach: hsl(11, 72%, 66%) !default;
 
-/// Main brand color
+/// Black color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$black: hsl(270, 3%, 11%) !default;
 
-/// Light grey
+/// White color
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$white: hsl(0, 0%, 100%) !default;
 
-/// Medium grey
+/// Light peach color
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+$light-peach: hsl(11, 100%, 80%) !default;
 
-/// Dark grey
+/// Dark grey color
 /// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$dark-grey: hsl(264, 5%, 20%) !default;
+
+/// Light grey color
+/// @type Color
+$light-grey: hsl(210, 17%, 95%) !default;
+
+
 
 
 
@@ -47,8 +52,9 @@ $dark-grey: rgb(68, 68, 68) !default;
 $max-width: 1180px !default;
 
 
-
-
+/// Transiton Duratino
+/// @type Duration
+$duration: 0.3s;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
