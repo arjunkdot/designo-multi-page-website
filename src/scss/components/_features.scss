@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  padding-left: 0;
 }
 .ds-features__item {
   display: flex;

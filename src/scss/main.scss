@@ -15,6 +15,7 @@
   'base/base',
   'base/fonts',
   'base/typography',
+  'base/links',
   'base/helpers';
 
 // 4. Layout-related sections
@@ -25,6 +26,7 @@
 // 5. Components
 @import
   'components/button',
+  'components/cta',
   'components/features',
   'components/hero',
   'components/service-grid';

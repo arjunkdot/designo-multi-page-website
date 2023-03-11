@@ -1,0 +1,27 @@
+.ds-link--nav-link {
+  border-bottom: 1px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  &:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+}
+
+.ds-link--nav-link--dark {
+  color: $dark-grey;
+
+  &:hover {
+    color: $dark-grey;
+    border-color: $dark-grey;
+  }
+}
+
+.ds-link--nav-link--light {
+  color: $white;
+
+  &:hover {
+    color: $white;
+    border-color: $white;
+  }
+}

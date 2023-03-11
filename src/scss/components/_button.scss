@@ -13,6 +13,7 @@
     justify-content: center;
     text-align: center;
     transition: all $duration ease-in-out;
+    line-height: 0;
 }
 .ds-btn--white{
     background-color: $white;
