@@ -1,0 +1,64 @@
+.ds-features__items {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.ds-features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  width: 350px;
+  margin-right: 2rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.ds-features__item-image-container {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+  }
+}
+.ds-features__item-image{
+    position: relative;
+}
+.ds-features__item-image-container--left {
+  &::before {
+    transform: rotate(0deg);
+  }
+}
+.ds-features__item-image-container--bottom {
+  &::before {
+    transform: rotate(-90deg);
+  }
+}
+.ds-features__item-image-container--top {
+  &::before {
+    transform: rotate(90deg);
+  }
+}
+
+.ds-features__item-title {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+.ds-features__text {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}

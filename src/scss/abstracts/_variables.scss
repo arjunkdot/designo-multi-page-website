@@ -23,7 +23,11 @@ $peach: hsl(11, 72%, 66%) !default;
 
 /// Black color
 /// @type Color
-$black: hsl(270, 3%, 11%) !default;
+$black: hsl(0, 0%, 0%) !default;
+
+/// Light black color
+/// @type Color
+$light-black: hsl(270, 3%, 11%) !default;
 
 /// White color
 /// @type Color

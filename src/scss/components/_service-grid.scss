@@ -1,0 +1,92 @@
+.ds-service-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+.ds-service-grid__section {
+  margin-right: 1.5rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.ds-service-grid__item {
+  position: relative;
+  height: 308px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: $black;
+    opacity: 49.69%;
+    transition: all $duration ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      background-color: $peach;
+      opacity: 80.6%;
+      transition: all $duration ease-in-out;
+    }
+  }
+}
+.ds-service-grid__item > * {
+  z-index: 1;
+}
+.ds-service-grid__item--lg {
+  height: 640px;
+}
+.ds-service-grid__item--app-design {
+  background-image: url("/assets/home/desktop/image-app-design.jpg");
+}
+.ds-service-grid__item--graphic-design {
+  background-image: url("/assets/home/desktop/image-graphic-design.jpg");
+}
+.ds-service-grid__item--web-design-lg {
+  background-image: url("/assets/home/desktop/image-web-design-large.jpg");
+}
+
+.ds-service-grid__item-title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.ds-service-grid__link {
+  position: relative;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: $white;
+  left: -10px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: -25px;
+    width: 13px;
+    height: 13px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAxbDQgNC00IDQiIHN0cm9rZT0iI0U3ODE2QiIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
