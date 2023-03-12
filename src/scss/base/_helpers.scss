@@ -7,7 +7,7 @@
  */
 .clearfix::after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -52,4 +52,23 @@
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.ds-section {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.ds-section--mb-5 {
+  margin-bottom: 5rem;
+}
+.ds-section--mb-0 {
+  margin-bottom: 0;
 }

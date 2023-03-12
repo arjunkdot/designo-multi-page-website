@@ -39,16 +39,3 @@ a {
     transition: all $duration ease-in-out;
   }
 }
-
-section{
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-
-  &:first-child{
-    margin-top: 0;
-  }
-  
-  &:last-child{
-    margin-bottom: 0;
-  }
-}
