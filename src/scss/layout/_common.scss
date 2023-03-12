@@ -1,0 +1,30 @@
+.ds-leaf {
+    position: relative;
+}
+.ds-leaf--top{
+    &::before{
+        content: "";
+        position: absolute;
+        top: 52vh;
+        left: 0;
+        width: 100%;
+        height: 594px;
+        background: url("/assets/shared/desktop/bg-pattern-leaf.svg") no-repeat;
+        z-index: -1;
+        // opacity: 50.23%;
+    }
+}
+.ds-leaf--bottom{
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 52vh;
+        right: 0;
+        width: 100%;
+        height: 594px;
+        background: url("/assets/shared/desktop/bg-pattern-leaf.svg") no-repeat;
+        transform: rotate(-180deg);
+        z-index: -1;
+        // opacity: 50.23%
+    }
+}
