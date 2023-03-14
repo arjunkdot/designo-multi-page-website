@@ -12,16 +12,52 @@
     background-image: url('/assets/home/desktop/bg-pattern-hero-home.svg');
     background-repeat: no-repeat;
     background-position: center right;
+
+    @media screen and (max-width: $md){
+        align-items: unset;
+        height: 843px;
+        padding: 3rem;
+        background-position: 300% 60%;
+    }
+
+}
+.ds-hero__text-container{
+    @media screen and (max-width: $md){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        .ds-btn{
+            margin-top: 1.25rem;
+        }
+    }
 }
 .ds-hero__title-home{
     max-width: 60%;
+    
+    @media screen and (max-width: $md){
+        max-width: 100%;
+        text-align: center;
+    }
 }
 .ds-hero__lead{
     max-width: 45%;
     margin-bottom: 2.5rem;
+
+    @media screen and (max-width: $md){
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 .ds-hero__image-home{
     position: absolute;
     right: 0;
     top: -40px;
+
+    @media screen and (max-width: $md){
+        left: 50%;
+        transform: translateX(-50%);
+        top: 35%;
+    }
 }

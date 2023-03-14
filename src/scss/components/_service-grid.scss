@@ -2,11 +2,20 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: $md){
+    grid-template-columns: 1fr;
+  }
 }
 .ds-service-grid__section {
   margin-right: 1.5rem;
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (max-width: $md){
+    margin-right: 0;
+    margin-bottom: 1.5rem;
   }
 }
 .ds-service-grid__item {
@@ -49,12 +58,20 @@
       transition: all $duration ease-in-out;
     }
   }
+
+  @media screen and (max-width: $md){
+    height: 200px;
+  }
 }
 .ds-service-grid__item > * {
   z-index: 1;
 }
 .ds-service-grid__item--lg {
   height: 640px;
+
+  @media screen and (max-width: $md){
+    height: 200px;
+  }
 }
 .ds-service-grid__item--app-design {
   background-image: url("/assets/home/desktop/image-app-design.jpg");

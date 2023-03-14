@@ -14,14 +14,31 @@
     justify-content: space-between;
     bottom: -4rem;
     z-index: 2;
+
+    @media screen and (max-width: $md){
+        flex-direction: column;
+        justify-content: center;
+        height: 350px;
+        background-size: 115%;
+        background-position: left;
+    }
 }
 .ds-cta__content, .ds-cta__actions{
     width: 50%;
+
+    @media screen and (max-width: $md){
+        text-align: center;
+        width: 100%;
+    }
 }
 .ds-cta__actions{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media screen and (max-width: $md){
+        justify-content: center;
+    }
 }
 .ds-cta__title{
     font-size: 40px;
@@ -29,9 +46,18 @@
     max-width: 300px;
     margin-top: 0;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: $md){
+        margin: 0 auto;
+    }
 }
 .ds-cta__text{
     max-width: 480px;
     margin-top: 0;
     margin-bottom: 0;
+
+    @media screen and (max-width: $md){
+        max-width: 450px;
+        margin: 1rem auto 2rem;
+    }
 }

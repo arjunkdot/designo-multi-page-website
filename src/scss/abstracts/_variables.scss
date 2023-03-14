@@ -60,14 +60,13 @@ $max-width: 1180px !default;
 /// @type Duration
 $duration: 0.3s;
 
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
-) !default;
+/// Breakpoints
+/// @type Length
+$xs: 575.98px;
+$sm: 767.98px;
+$md: 991.98px;
+$lg: 1199.98px;
+$xl: 1399.98px;
 
 
 

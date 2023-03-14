@@ -8,6 +8,11 @@
   background-color: $light-black;
   width: 100%;
   padding: 4rem 2rem;
+
+  @media screen and (max-width: $md){
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .ds-footer__top {
   display: flex;
