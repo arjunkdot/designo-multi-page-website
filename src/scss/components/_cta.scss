@@ -13,7 +13,6 @@
     align-items: center;
     justify-content: space-between;
     bottom: -4rem;
-    z-index: 2;
 
     @media screen and (max-width: $md){
         flex-direction: column;

@@ -10,6 +10,32 @@ function loadPath(path) {
     return xmlhttp.responseText;
 }
 /**
+ * Hide & Show Mobile Menu
+ */
+function toggleMenu() {
+    let openMenuIcon = document.getElementById('openMenu');
+    let closeMenuIcon = document.getElementById('closeMenu');
+    let menuItems = document.getElementsByClassName('ds-header__nav-items')[0];
+    // Open Menu
+    if (openMenuIcon && menuItems) {
+        openMenuIcon.addEventListener("click", function (e) {
+            e.preventDefault();
+            menuItems.classList.remove('ds-header__nav-items--resp-hide');
+            openMenuIcon === null || openMenuIcon === void 0 ? void 0 : openMenuIcon.classList.add('ds-header__nav-icon--hide');
+            closeMenuIcon === null || closeMenuIcon === void 0 ? void 0 : closeMenuIcon.classList.remove('ds-header__nav-icon--hide');
+        });
+    }
+    // Close Menu
+    if (closeMenuIcon && menuItems) {
+        closeMenuIcon.addEventListener("click", function (e) {
+            e.preventDefault();
+            menuItems.classList.add('ds-header__nav-items--resp-hide');
+            closeMenuIcon === null || closeMenuIcon === void 0 ? void 0 : closeMenuIcon.classList.add('ds-header__nav-icon--hide');
+            openMenuIcon === null || openMenuIcon === void 0 ? void 0 : openMenuIcon.classList.remove('ds-header__nav-icon--hide');
+        });
+    }
+}
+/**
  * Loads header & footer
  */
 function loadHeaderAndFooter() {
@@ -24,3 +50,5 @@ function loadHeaderAndFooter() {
 }
 // Call the function so that the header and footer are loaded.
 loadHeaderAndFooter();
+// Call toggle menu function.
+toggleMenu();

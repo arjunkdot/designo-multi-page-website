@@ -1,11 +1,23 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-.ds-header__navbar{
+.ds-header__navbar {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  height: 130px;
+  @media screen and (max-width: $sm) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 96px;
     display: flex;
-    place-items: center;
-    justify-content: space-between;
-    height: 130px;
+    align-items: center;
+    background-color: $white;
+    z-index: 2;
+  }
 }
 .ds-header__navbar-logo {
   width: 192px;
@@ -16,11 +28,65 @@
   padding-left: 0;
   font-size: 0.9rem;
   display: flex;
+
+  @media screen and (max-width: $sm) {
+    position: fixed;
+    top: 96px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 3rem 1.5rem;
+    flex-direction: column;
+    background-color: $light-black;
+    z-index: 3;
+
+    &::before {
+      content: "";
+      background: rgba($black, 0.4);
+      top: 96px;
+      left: 0;
+      height: calc(100% - 96px);
+      width: 100%;
+      position: fixed;
+      z-index: -2;
+    }
+  }
 }
 .ds-header__nav-item {
   margin-right: 2rem;
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (max-width: $sm) {
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.ds-header__nav-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  position: relative;
+  top: -5px;
+  display: none;
+
+  @media screen and (max-width: $sm) {
+    display: block;
+  }
+}
+.ds-header__nav-icon--hide {
+  display: none;
+}
+.ds-header__nav-items--resp-hide {
+  @media screen and (max-width: $sm) {
+    display: none;
   }
 }

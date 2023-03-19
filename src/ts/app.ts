@@ -11,9 +11,38 @@ function loadPath(path: string) {
 
 
 /**
+ * Hide & Show Mobile Menu
+ */
+function toggleMenu() {
+    let openMenuIcon = document.getElementById('openMenu');
+    let closeMenuIcon = document.getElementById('closeMenu');
+    let menuItems = document.getElementsByClassName('ds-header__nav-items')[0];
+
+    // Open Menu
+    if (openMenuIcon && menuItems) {
+        openMenuIcon.addEventListener("click", function (e) {
+            e.preventDefault();
+            menuItems.classList.remove('ds-header__nav-items--resp-hide');
+            openMenuIcon?.classList.add('ds-header__nav-icon--hide');
+            closeMenuIcon?.classList.remove('ds-header__nav-icon--hide');
+        });
+    }
+
+    // Close Menu
+    if (closeMenuIcon && menuItems) {
+        closeMenuIcon.addEventListener("click", function (e) {
+            e.preventDefault();
+            menuItems.classList.add('ds-header__nav-items--resp-hide');
+            closeMenuIcon?.classList.add('ds-header__nav-icon--hide');
+            openMenuIcon?.classList.remove('ds-header__nav-icon--hide');
+        });
+    }
+}
+
+/**
  * Loads header & footer
  */
-function loadHeaderAndFooter(){
+function loadHeaderAndFooter() {
     let headerEl = document.getElementById('header');
     let footerEl = document.getElementById('footer');
 
@@ -26,3 +55,5 @@ function loadHeaderAndFooter(){
 }
 // Call the function so that the header and footer are loaded.
 loadHeaderAndFooter();
+// Call toggle menu function.
+toggleMenu();

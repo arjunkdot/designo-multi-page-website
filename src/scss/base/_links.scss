@@ -15,6 +15,15 @@
     color: $dark-grey;
     border-color: $dark-grey;
   }
+
+  @media screen and (max-width: $sm){
+    color: $white;
+
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
+  }
 }
 
 .ds-link--nav-link--light {
