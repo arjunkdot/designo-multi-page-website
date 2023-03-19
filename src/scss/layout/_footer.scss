@@ -9,9 +9,15 @@
   width: 100%;
   padding: 4rem 2rem;
 
-  @media screen and (max-width: $md){
+  @media screen and (max-width: $md) {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  @media screen and (max-width: $sm) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 .ds-footer__top {
@@ -20,15 +26,36 @@
   justify-content: space-between;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba($white, 0.1);
+
+  @media screen and (max-width: $sm) {
+    flex-direction: column;
+    border-bottom: none;
+  }
 }
 .ds-footer__bottom {
   margin-top: 2rem;
   display: flex;
   align-items: center;
+  @media screen and (max-width: $sm) {
+    margin-top: 0;
+    flex-direction: column;
+  }
+}
+.ds-footer__logo-container {
+  @media screen and (max-width: $sm) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba($white, 0.1);
+  }
 }
 .ds-footer__logo {
   width: 202px;
   height: auto;
+  @media screen and (max-width: $sm) {
+    margin-bottom: 2rem;
+  }
 }
 .ds-footer__nav-items {
   padding-left: 0;
@@ -36,11 +63,27 @@
   display: flex;
   align-items: center;
   font-size: 0.9rem;
+
+  @media screen and (max-width: $sm) {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
 }
 .ds-footer__nav-item {
   margin-right: 2rem;
   &:last-child {
     margin-right: 0;
+  }
+  @media screen and (max-width: $sm) {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: $sm) {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 .ds-footer__section {
@@ -51,9 +94,23 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  @media screen and (max-width: $sm) {
+    width: 100%;
+    margin-bottom: 2rem;
+
+    &:last-child{
+      margin-bottom: 0;
+      justify-content: center;
+    }
+  }
 }
 .ds-footer__section-line {
   display: block;
+
+  @media screen and (max-width: $sm) {
+    text-align: center;
+  }
 }
 .ds-footer__social-items {
   list-style-type: none;

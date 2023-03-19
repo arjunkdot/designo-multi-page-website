@@ -20,6 +20,13 @@
         background-position: 300% 60%;
     }
 
+    @media screen and (max-width: $sm){
+        margin-top: 96px !important;
+        padding: 0;
+        border-radius: 0;
+        background-position: center left;
+    }
+
 }
 .ds-hero__text-container{
     @media screen and (max-width: $md){
@@ -29,6 +36,14 @@
         z-index: 1;
         .ds-btn{
             margin-top: 1.25rem;
+        }
+    }
+
+    @media screen and (max-width: $md){
+        margin-top: 3.75rem;
+
+        .ds-btn{
+            margin-top: 1.55rem;
         }
     }
 }
@@ -48,6 +63,11 @@
         max-width: 80%;
         text-align: center;
         margin: 0 auto;
+    }
+    @media screen and (max-width: $md){
+        max-width: 85%;
+        font-size: 15px;
+        line-height: 25px;
     }
 }
 .ds-hero__image-home{
