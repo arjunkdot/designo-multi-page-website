@@ -16,6 +16,7 @@ function toggleMenu() {
     let openMenuIcon = document.getElementById('openMenu');
     let closeMenuIcon = document.getElementById('closeMenu');
     let menuItems = document.getElementsByClassName('ds-header__nav-items')[0];
+    let body = document.querySelector('body');
     // Open Menu
     if (openMenuIcon && menuItems) {
         openMenuIcon.addEventListener("click", function (e) {
@@ -23,6 +24,8 @@ function toggleMenu() {
             menuItems.classList.remove('ds-header__nav-items--resp-hide');
             openMenuIcon === null || openMenuIcon === void 0 ? void 0 : openMenuIcon.classList.add('ds-header__nav-icon--hide');
             closeMenuIcon === null || closeMenuIcon === void 0 ? void 0 : closeMenuIcon.classList.remove('ds-header__nav-icon--hide');
+            // Disable scroll
+            body.style.overflowY = 'hidden';
         });
     }
     // Close Menu
@@ -32,6 +35,8 @@ function toggleMenu() {
             menuItems.classList.add('ds-header__nav-items--resp-hide');
             closeMenuIcon === null || closeMenuIcon === void 0 ? void 0 : closeMenuIcon.classList.add('ds-header__nav-icon--hide');
             openMenuIcon === null || openMenuIcon === void 0 ? void 0 : openMenuIcon.classList.remove('ds-header__nav-icon--hide');
+            // Enable scroll
+            body.style.overflowY = 'auto';
         });
     }
 }

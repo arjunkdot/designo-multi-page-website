@@ -17,6 +17,7 @@ function toggleMenu() {
     let openMenuIcon = document.getElementById('openMenu');
     let closeMenuIcon = document.getElementById('closeMenu');
     let menuItems = document.getElementsByClassName('ds-header__nav-items')[0];
+    let body = document.querySelector('body');
 
     // Open Menu
     if (openMenuIcon && menuItems) {
@@ -25,6 +26,8 @@ function toggleMenu() {
             menuItems.classList.remove('ds-header__nav-items--resp-hide');
             openMenuIcon?.classList.add('ds-header__nav-icon--hide');
             closeMenuIcon?.classList.remove('ds-header__nav-icon--hide');
+            // Disable scroll
+            body!.style.overflowY = 'hidden';
         });
     }
 
@@ -35,6 +38,8 @@ function toggleMenu() {
             menuItems.classList.add('ds-header__nav-items--resp-hide');
             closeMenuIcon?.classList.add('ds-header__nav-icon--hide');
             openMenuIcon?.classList.remove('ds-header__nav-icon--hide');
+            // Enable scroll
+            body!.style.overflowY = 'auto';
         });
     }
 }

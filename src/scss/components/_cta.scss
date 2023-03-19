@@ -27,6 +27,8 @@
         width: 87.25%;
         margin: 0 auto;
         padding: 1.5rem;
+        background-size: 250%;
+        background-position: 42% center;
     }
 }
 .ds-cta__content, .ds-cta__actions{
@@ -59,6 +61,7 @@
     @media screen and (max-width: $sm){
         font-size: 32px;
         line-height: 36px;
+        max-width: 75%;
     }
 }
 .ds-cta__text{
