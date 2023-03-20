@@ -3,9 +3,12 @@
   width: 100%;
   grid-template-columns: 1fr 1fr;
 
-  @media screen and (max-width: $md){
+  @media screen and (max-width: $md) {
     grid-template-columns: 1fr;
   }
+}
+.ds-service-grid--two-cards {
+  gap: 2rem;
 }
 .ds-service-grid__section {
   margin-right: 1.5rem;
@@ -13,7 +16,7 @@
     margin-right: 0;
   }
 
-  @media screen and (max-width: $md){
+  @media screen and (max-width: $md) {
     margin-right: 0;
     margin-bottom: 1.5rem;
   }
@@ -59,14 +62,13 @@
     }
   }
 
-  @media screen and (max-width: $md){
+  @media screen and (max-width: $md) {
     height: 200px;
   }
 
-  @media screen and (max-width: $md){
+  @media screen and (max-width: $md) {
     height: 250px;
   }
-
 }
 .ds-service-grid__item > * {
   z-index: 1;
@@ -74,44 +76,55 @@
 .ds-service-grid__item--lg {
   height: 640px;
 
-  @media screen and (max-width: $md){
+  @media screen and (max-width: $md) {
     height: 200px;
   }
 
-  @media screen and (max-width: $md){
+  @media screen and (max-width: $md) {
     height: 250px;
   }
 }
 .ds-service-grid__item--app-design {
   background-image: url("/assets/home/desktop/image-app-design.jpg");
-  
-  @media screen and (max-width: $md){
+
+  @media screen and (max-width: $md) {
     background-image: url("/assets/home/tablet/image-app-design.jpg");
   }
 
-  @media screen and (max-width: $sm){
+  @media screen and (max-width: $sm) {
     background-image: url("/assets/home/mobile/image-app-design.jpg");
   }
 }
 .ds-service-grid__item--graphic-design {
   background-image: url("/assets/home/desktop/image-graphic-design.jpg");
 
-  @media screen and (max-width: $md){
+  @media screen and (max-width: $md) {
     background-image: url("/assets/home/tablet/image-graphic-design.jpg");
   }
 
-  @media screen and (max-width: $sm){
+  @media screen and (max-width: $sm) {
     background-image: url("/assets/home/mobile/image-graphic-design.jpg");
+  }
+}
+.ds-service-grid__item--web-design {
+  background-image: url("/assets/home/desktop/image-web-design-small.jpg");
+
+  @media screen and (max-width: $md) {
+    background-image: url("/assets/home/tablet/image-web-design.jpg");
+  }
+
+  @media screen and (max-width: $sm) {
+    background-image: url("/assets/home/mobile/image-web-design.jpg");
   }
 }
 .ds-service-grid__item--web-design-lg {
   background-image: url("/assets/home/desktop/image-web-design-large.jpg");
 
-  @media screen and (max-width: $md){
+  @media screen and (max-width: $md) {
     background-image: url("/assets/home/tablet/image-web-design.jpg");
   }
 
-  @media screen and (max-width: $sm){
+  @media screen and (max-width: $sm) {
     background-image: url("/assets/home/mobile/image-web-design.jpg");
   }
 }

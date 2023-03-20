@@ -45,9 +45,13 @@ function toggleMenu() {
  */
 function loadHeaderAndFooter() {
     let headerEl = document.getElementById('header');
+    let ctaEl = document.getElementById('cta');
     let footerEl = document.getElementById('footer');
     if (headerEl) {
         headerEl.innerHTML = loadPath('/common/header.html');
+    }
+    if (ctaEl) {
+        ctaEl.innerHTML = loadPath('/common/cta.html');
     }
     if (footerEl) {
         footerEl.innerHTML = loadPath('/common/footer.html');
