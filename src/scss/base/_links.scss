@@ -1,3 +1,11 @@
+.ds-link--transparent{
+  color: unset;
+  &:hover{
+    color: unset;
+    text-decoration: unset;
+  }
+}
+
 .ds-link--nav-link {
   border-bottom: 1px solid transparent;
   text-transform: uppercase;
