@@ -4,6 +4,7 @@
 body {
   color: $dark-grey;
   font: normal 100% / 1.4 $text-font-stack;
+  overflow-x: hidden;
 }
 
 .ds-heading{
