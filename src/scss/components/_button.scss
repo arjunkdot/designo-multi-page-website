@@ -23,3 +23,11 @@
         color: $white;
     }
 }
+.ds-btn--peach{
+    background-color: $peach;
+    color: $white;
+    &:hover{
+        background-color: $light-peach;
+        color: $white;
+    }
+}

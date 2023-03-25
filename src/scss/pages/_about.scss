@@ -1,0 +1,84 @@
+.ds-about-hero {
+  background-color: $peach;
+  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  border-radius: 15px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.ds-about-hero__left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+}
+.ds-about-hero__right {
+  border-radius: 0 15px 15px 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ds-about-hero__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.ds-about-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ds-about-section {
+  border-radius: 15px;
+  height: 640px;
+  display: grid;
+}
+.ds-about-section--left {
+  grid-template-columns: 60% 40%;
+}
+.ds-about-section--right {
+  grid-template-columns: 40% 60%;
+}
+.ds-about-section--right .ds-about-section__left,  .ds-about-section--left .ds-about-section__right{
+  height: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ds-about-section--right .ds-about-section__left {
+  border-radius: 15px 0 0 15px;
+}
+.ds-about-section--left .ds-about-section__right {
+  border-radius: 0 15px 15px 0;
+}
+.ds-about-section--right .ds-about-section__right,
+.ds-about-section--left .ds-about-section__left {
+  padding: 5rem 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ds-about-section--right {
+  background-image: url("/assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 60% 100%;
+}
+.ds-about-section--left {
+  background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 5% 100%;
+}
+.ds-about-section__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ds-about-section--light-peach {
+  background-color: $lighter-peach;
+}
+.ds-about-section__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

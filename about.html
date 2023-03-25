@@ -1,66 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  Our Company
-  Locations
-  Contact
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./build/css/style.min.css" />
 
-  About us
-  Founded in 2010, we are a creative agency that produces lasting results for our clients. 
-  We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
-  that make real impact. We’re always looking forward to creating brands, products, and 
-  digital experiences that connect with our clients' audiences.
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  </head>
+  <body class="ds-leaf ds-leaf--top">
+    <div id="header"></div>
+    <div class="ds-container ds-container--footer-cta">
+      <section class="ds-section ds-about-hero">
+        <div class="ds-about-hero__left">
+          <h1
+            class="ds-heading ds-heading--h1 ds-text--white ds-about-hero__title"
+          >
+            About us
+          </h1>
+          <p class="ds-text ds-text--body ds-text--white">
+            Founded in 2010, we are a creative agency that produces lasting
+            results for our clients. We&apos;ve partnered with many startups,
+            corporations, and nonprofits alike to craft designs that make real
+            impact. We&apos;re always looking forward to creating brands,
+            products, and digital experiences that connect with our clients'
+            audiences.
+          </p>
+        </div>
+        <div class="ds-about-hero__right">
+          <img
+            src="/assets/about/desktop/image-about-hero.jpg"
+            class="ds-about-hero__image"
+            alt="About us"
+          />
+        </div>
+      </section>
 
-  World-class talent
-  We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
-  crafted from concept to launch, ensuring success in its given market. We are constantly updating 
-  our skills in a myriad of platforms.
+      <section class="ds-section ds-about-section ds-about-section--light-peach ds-about-section--right">
+        <div class="ds-about-section__left">
+          <img
+            src="/assets/about/desktop/image-world-class-talent.jpg"
+            class="ds-about-section__image"
+            alt="World-class talent"
+          />
+        </div>
+        <div class="ds-about-section__right">
+          <h2
+            class="ds-heading ds-heading--h2 ds-text ds-text--peach ds-about-section__title"
+          >
+            World-class talent
+          </h2>
+          <p class="ds-text ds-text--body">
+            We are a crew of strategists, problem-solvers, and technologists.
+            Every design is thoughtfully crafted from concept to launch,
+            ensuring success in its given market. We are constantly updating our
+            skills in a myriad of platforms.
+          </p>
+          <p class="ds-text ds-text--body">
+            Our team is multi-disciplinary and we are not merely interested in
+            form — content and meaning are just as important. We give great
+            importance to craftsmanship, service, and prompt delivery. Clients
+            have always been impressed with our high-quality outcomes that
+            encapsulates their brand&apos;s story and mission.
+          </p>
+        </div>
+      </section>
 
-  Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
-  are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
-  Clients have always been impressed with our high-quality outcomes that encapsulates their 
-  brand’s story and mission.
+      <section class="ds-features ds-section ds-section--mb-5 ds-section ds-section--mb-md-0">
+        <ul class="ds-features__items">
+          <li class="ds-features__item">
+            <div
+              class="ds-features__item-image-container ds-features__item-image-container--top"
+            >
+              <img
+                src="/assets/shared/desktop/illustration-canada.svg"
+                alt="Canada"
+                class="ds-features__item-image"
+                width="202"
+                height="202"
+              />
+            </div>
+            <div class="ds-features__detail">
+              <h3 class="ds-heading ds-heading--h3 ds-features__item-title">
+                Canada
+              </h3>
+              <a href="#" class="ds-btn ds-btn--peach" role="button"
+                >See location</a
+              >
+            </div>
+          </li>
+          <li class="ds-features__item">
+            <div
+              class="ds-features__item-image-container ds-features__item-image-container--left"
+            >
+              <img
+                src="/assets/shared/desktop/illustration-australia.svg"
+                alt="Australia"
+                class="ds-features__item-image"
+                width="202"
+                height="202"
+              />
+            </div>
+            <div class="ds-features__detail">
+              <h3 class="ds-heading ds-heading--h3 ds-features__item-title">
+                Australia
+              </h3>
+              <a href="#" class="ds-btn ds-btn--peach" role="button"
+                >See location</a
+              >
+            </div>
+          </li>
+          <li class="ds-features__item">
+            <div
+              class="ds-features__item-image-container ds-features__item-image-container--bottom"
+            >
+              <img
+                src="/assets/shared/desktop/illustration-united-kingdom.svg"
+                alt="United Kingdom"
+                class="ds-features__item-image"
+                width="202"
+                height="202"
+              />
+            </div>
+            <div class="ds-features__detail">
+              <h3 class="ds-heading ds-heading--h3 ds-features__item-title">
+                United Kingdom
+              </h3>
+              <a href="#" class="ds-btn ds-btn--peach" role="button"
+                >See location</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
 
-  The real deal
-  As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
-  Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
-  opportunity. We make design and technology more accessible and give you tools to measure success.
+      <section class="ds-section ds-about-section ds-about-section--light-peach ds-about-section--left ds-section--mb-5 ds-section--mb-md-0">
+        
+        <div class="ds-about-section__left">
+          <h2
+          class="ds-heading ds-heading--h2 ds-text ds-text--peach ds-about-section__title"
+          >
+          The real deal
+          </h2>
+          <p class="ds-text ds-text--body">
+            As strategic partners in our clients&apos; businesses, we are
+            ready to take on any challenge as our own. Solving real problems require
+            empathy and collaboration, and we strive to bring a fresh perspective to
+            every opportunity. We make design and technology more accessible and give
+            you tools to measure success.
+          </p>
+          <p class="ds-text ds-text--body">
+            We are visual storytellers in appealing and
+      captivating ways. By combining business and marketing strategies, we
+      inspire audiences to take action and drive real results.
+          </p>
+        </div>
 
-  We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
-  we inspire audiences to take action and drive real results.
+        <div class="ds-about-section__right">
+          <img
+            src="/assets/about/desktop/image-real-deal.jpg"
+            class="ds-about-section__image"
+            alt="The real deal"
+          />
+        </div>
 
-  Canada
-  See location
+      </section>
 
-  Australia
-  See location
+        
+      <div id="cta"></div>
+    </div>
+    <div id="footer"></div>
 
-  United Kingdom
-  See location
-
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
-
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
+    <script src="/build/js/app.js"></script>
+  </body>
 </html>
