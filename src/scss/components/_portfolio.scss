@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+
+    @media screen and (max-width: $md){
+        grid-template-columns: 1fr;
+    }
 }
 .ds-portfolio__card{
     width: 100%;
@@ -17,12 +21,24 @@
             color: $white;
         }
     }
+
+    @media screen and (max-width: $md){
+        height: 310px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
 }
 .ds-portfolio__card-image-container{
     height: 100%;
     height: 320px;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
+
+    @media screen and (max-width: $md){
+        border-radius: 15px 0px 0px 15px;
+        height: 100%;
+    }
 }
 .ds-portfolio__card-image{
     width: 100%;
