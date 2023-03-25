@@ -9,6 +9,10 @@
 }
 .ds-service-grid--two-cards {
   gap: 2rem;
+
+  @media screen and (max-width: $md){
+      gap: 0;
+  }
 }
 .ds-service-grid__section {
   margin-right: 1.5rem;
@@ -64,7 +68,6 @@
 
   @media screen and (max-width: $md) {
     height: 200px;
-    margin-bottom: 0;
   }
 
   @media screen and (max-width: $md) {
