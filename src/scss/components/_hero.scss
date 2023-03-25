@@ -1,124 +1,132 @@
-.ds-hero{
-    border-radius: 15px;
-    background-color: $peach;
-    position: relative;
-    overflow: hidden;
+.ds-hero {
+  border-radius: 15px;
+  background-color: $peach;
+  position: relative;
+  overflow: hidden;
 }
-.ds-hero--home{
-    height: 640px;
-    padding: 5rem;
-    display: flex;
-    align-items: center;
-    background-image: url('/assets/home/desktop/bg-pattern-hero-home.svg');
-    background-repeat: no-repeat;
-    background-position: center right;
+.ds-hero--home {
+  height: 640px;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
 
-    @media screen and (max-width: $md){
-        align-items: unset;
-        height: 843px;
-        padding: 3rem;
-        background-position: 300% 60%;
-    }
+  @media screen and (max-width: $md) {
+    align-items: unset;
+    height: 843px;
+    padding: 3rem;
+    background-position: 300% 60%;
+  }
 
-    @media screen and (max-width: $sm){
-        margin-top: 96px !important;
-        padding: 0;
-        border-radius: 0;
-        background-position: center left;
-    }
-
+  @media screen and (max-width: $sm) {
+    margin-top: 96px !important;
+    padding: 0;
+    border-radius: 0;
+    background-position: center left;
+  }
 }
 .ds-hero--subpage {
-    height: 252px;
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+
+  @media screen and (max-width: $md) {
+    background-image: url("/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg") !important;
+    background-size: 120% !important;
+    background-position: left center !important;
+  }
+
+  @media screen and (max-width: $sm) {
+    border-radius: 0px;
+    margin-top: 96px !important;
+    height: 320px;
+    background-image: url("/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg") !important;
+    background-size: 235% !important;
+    background-position: 100% 0% !important;
+  }
+}
+.ds-hero--app-design {
+  background-image: url("/assets/app-design/desktop/bg-pattern-intro-app.svg");
+  background-position: left center;
+}
+.ds-hero--graphic-design {
+  background-image: url("/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg");
+  background-position: left center;
+}
+.ds-hero--web-design {
+  background-image: url("/assets/web-design/desktop/bg-pattern-intro-web.svg");
+  background-position: right center;
+}
+.ds-hero__sublead {
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 350px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+
+  @media screen and (max-width: $sm) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+.ds-hero__text-container {
+  @media screen and (max-width: $md) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-    @media screen and (max-width: $md){
-        background-image: url("/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg") !important;
-        background-size: 120% !important;
+    z-index: 1;
+    .ds-btn {
+      margin-top: 1.25rem;
     }
+  }
 
-    @media screen and (max-width: $sm){
-        border-radius: 0px;
-        margin-top: 96px !important;
-        height: 320px;
-        background-image: url("/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg") !important;
-        background-size: 235% !important;
-        background-position: 100% 0% !important;
+  @media screen and (max-width: $md) {
+    margin-top: 3.75rem;
+
+    .ds-btn {
+      margin-top: 1.55rem;
     }
+  }
 }
-.ds-hero--app-design{
-    background-image: url("/assets/app-design/desktop/bg-pattern-intro-app.svg");
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: left center;
-}
-.ds-hero__sublead{
-    font-size: 16px;
-    line-height: 26px;
-    max-width: 350px;
+.ds-hero__title-home {
+  max-width: 60%;
+
+  @media screen and (max-width: $md) {
+    max-width: 85%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-
-    @media screen and (max-width: $sm) {
-        font-size: 15px;
-        line-height: 25px;
-    }
+  }
 }
-.ds-hero__text-container{
-    @media screen and (max-width: $md){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1;
-        .ds-btn{
-            margin-top: 1.25rem;
-        }
-    }
+.ds-hero__lead {
+  max-width: 45%;
+  margin-bottom: 2.5rem;
 
-    @media screen and (max-width: $md){
-        margin-top: 3.75rem;
-
-        .ds-btn{
-            margin-top: 1.55rem;
-        }
-    }
+  @media screen and (max-width: $md) {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: $md) {
+    max-width: 85%;
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
-.ds-hero__title-home{
-    max-width: 60%;
-    
-    @media screen and (max-width: $md){
-        max-width: 85%;
-        text-align: center;
-    }
-}
-.ds-hero__lead{
-    max-width: 45%;
-    margin-bottom: 2.5rem;
+.ds-hero__image-home {
+  position: absolute;
+  right: 0;
+  top: -40px;
 
-    @media screen and (max-width: $md){
-        max-width: 80%;
-        text-align: center;
-        margin: 0 auto;
-    }
-    @media screen and (max-width: $md){
-        max-width: 85%;
-        font-size: 15px;
-        line-height: 25px;
-    }
-}
-.ds-hero__image-home{
-    position: absolute;
-    right: 0;
-    top: -40px;
-
-    @media screen and (max-width: $md){
-        left: 50%;
-        transform: translateX(-50%);
-        top: 35%;
-    }
+  @media screen and (max-width: $md) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+  }
 }
