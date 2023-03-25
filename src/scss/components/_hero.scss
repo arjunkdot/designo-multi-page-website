@@ -39,6 +39,15 @@
         background-image: url("/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg") !important;
         background-size: 120% !important;
     }
+
+    @media screen and (max-width: $sm){
+        border-radius: 0px;
+        margin-top: 96px !important;
+        height: 320px;
+        background-image: url("/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg") !important;
+        background-size: 235% !important;
+        background-position: top right !important;
+    }
 }
 .ds-hero--app-design{
     background-image: url("/assets/app-design/desktop/bg-pattern-intro-app.svg");
@@ -54,6 +63,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+
+    @media screen and (max-width: $sm) {
+        font-size: 15px;
+        line-height: 25px;
+    }
 }
 .ds-hero__text-container{
     @media screen and (max-width: $md){

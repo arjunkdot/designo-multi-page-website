@@ -28,6 +28,11 @@
         grid-template-columns: 50% 50%;
         align-items: center;
     }
+
+    @media screen and (max-width: $sm){
+        height: 478px;
+        grid-template-columns: 1fr;
+    }
 }
 .ds-portfolio__card-image-container{
     height: 100%;
@@ -36,10 +41,14 @@
     overflow: hidden;
 
     @media screen and (max-width: $md){
-        border-radius: 15px 0px 0px 15px;
+        border-radius: 15px 0 0 15px;
         height: 100%;
     }
-}
+    @media screen and (max-width: $sm){
+        height: 320px;
+        border-radius: 15px 15px 0 0;
+    }
+}   
 .ds-portfolio__card-image{
     width: 100%;
     height: 100%;
@@ -48,6 +57,10 @@
 .ds-portfolio__card-details{
     padding: 1rem 2.5rem;
     text-align: center;
+
+    @media screen and (max-width: $sm){
+        padding: 1rem 1rem;
+    }
 }
 .ds-portfolio__card-title{
     color: $peach;
