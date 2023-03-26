@@ -53,6 +53,10 @@
     @media screen and (max-width: $md) {
       margin-top: 3rem;
     }
+
+    @media screen and (max-width: $md) {
+      margin-top: 0;
+    }
   }
   .ds-features__item-image-container {
     margin-right: 0;

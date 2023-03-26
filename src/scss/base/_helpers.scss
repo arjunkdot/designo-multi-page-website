@@ -87,6 +87,12 @@
   }
 
 }
+.ds-section--sm-text{
+  @media screen and (max-width: $sm) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
 .ds-section--mb-5 {
   margin-bottom: 5rem;
 }
@@ -104,5 +110,15 @@
 .ds-section--mb-md-0{
   @media screen and (max-width: $md){
     margin-bottom: 0;
+  }
+}
+.ds-section--mb-sm-0{
+  @media screen and (max-width: $sm){
+    margin-bottom: 0 !important;
+  }
+}
+.ds-section--mt-sm-0{
+  @media screen and (max-width: $sm){
+    margin-top: 0 !important;
   }
 }

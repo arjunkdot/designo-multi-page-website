@@ -16,6 +16,18 @@
     background-position: -13vh -13vh;
     background-size: 100%;
   }
+
+  @media screen and (max-width: $sm) {
+    height: 715px;
+    background-image: url("/assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+    margin-top: 96px !important;
+    width: 100%;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-position: -465px 185px;
+    background-size: 220%;
+  }
 }
 
 .ds-about-hero__left {
@@ -31,6 +43,10 @@
     order: 2;
     padding: 2rem 4rem;
   }
+
+  @media screen and (max-width: $sm) {
+    padding: 2rem;
+  }
 }
 .ds-about-hero__right {
   border-radius: 0 15px 15px 0;
@@ -40,6 +56,11 @@
 
   @media screen and (max-width: $md) {
     border-radius: 15px 15px 0 0;
+    order: 1;
+  }
+
+  @media screen and (max-width: $sm) {
+    border-radius: 0 0 0 0;
     order: 1;
   }
 }
@@ -57,17 +78,26 @@
   @media screen and (max-width: $md) {
     background-image: url("/assets/about/tablet/image-about-hero.jpg");
   }
+  @media screen and (max-width: $sm) {
+    background-image: url("/assets/about/mobile/image-about-hero.jpg");
+  }
 }
 .ds-about-section__image--talent {
   background-image: url("/assets/about/desktop/image-world-class-talent.jpg");
   @media screen and (max-width: $md) {
     background-image: url("/assets/about/tablet/image-world-class-talent.jpg");
   }
+  @media screen and (max-width: $sm) {
+    background-image: url("/assets/about/mobile/image-world-class-talent.jpg");
+  }
 }
 .ds-about-section__image--real {
   background-image: url("/assets/about/desktop/image-real-deal.jpg");
   @media screen and (max-width: $md) {
     background-image: url("/assets/about/tablet/image-real-deal.jpg");
+  }
+  @media screen and (max-width: $sm) {
+    background-image: url("/assets/about/mobile/image-real-deal.jpg");
   }
 }
 .ds-about-section {
@@ -77,6 +107,10 @@
   @media screen and (max-width: $md) {
     height: 736px;
     grid-template-rows: 320px 1fr;
+  }
+  @media screen and (max-width: $sm) {
+    height: 865px;
+    padding: 0;
   }
 }
 .ds-about-section--left {
@@ -102,12 +136,18 @@
   @media screen and (max-width: $md) {
     border-radius: 15px 15px 0 0;
   }
+  @media screen and (max-width: $sm) {
+    border-radius: 0 0 0 0;
+  }
 }
 .ds-about-section--left .ds-about-section__right {
   border-radius: 0 15px 15px 0;
   @media screen and (max-width: $md) {
     border-radius: 15px 15px 0 0;
     order: 1;
+  }
+  @media screen and (max-width: $sm) {
+    border-radius: 0 0 0 0;
   }
 }
 .ds-about-section--left .ds-about-section__left {
@@ -127,6 +167,9 @@
     text-align: center;
     padding: 2rem 3.5rem;
   }
+  @media screen and (max-width: $sm) {
+    padding: 2rem 1.65rem;
+  }
 }
 .ds-about-section--right {
   background-image: url("/assets/shared/desktop/bg-pattern-three-circles.svg");
@@ -136,6 +179,10 @@
   @media screen and (max-width: $md) {
     background-position: 85% 60%;
     background-size: 90%;
+  }
+  @media screen and (max-width: $md) {
+    background-position: 0% 100%;
+    background-size: 150%;
   }
 }
 .ds-about-section--left {
@@ -147,6 +194,10 @@
     background-image: url("/assets/shared/desktop/bg-pattern-three-circles.svg");
     background-position: 85% 75%;
     background-size: 90%;
+  }
+  @media screen and (max-width: $sm) {
+    background-position: 0% 100%;
+    background-size: 150%;
   }
 }
 .ds-about-section__image {
