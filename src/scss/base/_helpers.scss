@@ -126,6 +126,16 @@
     margin-bottom: 0 !important;
   }
 }
+.ds-section--mt-md-5{
+  @media screen and (max-width: $md){
+    margin-top: 5rem !important;
+  }
+}
+.ds-section--mt-md-8{
+  @media screen and (max-width: $md){
+    margin-top: 8rem !important;
+  }
+}
 .ds-section--mt-sm-0{
   @media screen and (max-width: $sm){
     margin-top: 0 !important;
