@@ -41,7 +41,7 @@ body {
   color: $peach;
 }
 .ds-text--bold{
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .ds-text--body{
   font-size: 16px;
