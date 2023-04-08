@@ -14,6 +14,7 @@
     text-align: center;
     transition: all $duration ease-in-out;
     line-height: 0;
+    cursor: pointer;
 }
 .ds-btn--white{
     background-color: $white;

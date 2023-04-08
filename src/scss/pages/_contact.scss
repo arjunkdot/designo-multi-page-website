@@ -1,0 +1,26 @@
+.ds-contact-hero{
+    background-color: $peach;
+    border-radius: 15px;
+    padding: 3rem 5.5rem;
+    height: 480px;
+    display: grid;
+    grid-template-columns: 50% 45%;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/assets/contact/desktop/bg-pattern-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.ds-contact-hero__form{
+    .ds-btn{
+        width: 150px;
+        display: block;
+        margin-left: auto;
+    }
+}
+.ds-contact-hero__title{
+    margin-top: 0;
+}
+.ds-contact-hero__column{
+   padding: 0 1rem;
+}

@@ -1,40 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="./build/css/style.min.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./build/css/style.min.css" />
 
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  Our Company
-  Locations
-  Contact
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="ds-container ds-container--footer-cta">
+      <section class="ds-section ds-contact-hero">
+        <div class="ds-contact-hero__column">
+          <h1
+            class="ds-heading ds-heading--h2 ds-contact-hero__title ds-text--white"
+          >
+            Contact Us
+          </h1>
+          <p
+            class="ds-text ds-text--body ds-text--white ds-section--sm-text ds-contact-hero__description"
+          >
+            Ready to take it to the next level? Let&apos;s talk about your
+            project or idea and find out how we can help your business grow. If
+            you are looking for unique digital experiences that&apos;s relatable
+            to your users, drop us a line.
+          </p>
+        </div>
 
-  Contact us
-  Ready to take it to the next level? Let’s talk about your project or idea and find out how 
-  we can help your business grow. If you are looking for unique digital experiences that’s 
-  relatable to your users, drop us a line.
+        <div class="ds-contact-hero__column">
+          <form id="contactForm" class="ds-contact-hero__form" method="POST">
+            <div class="ds-input-group">
+              <input
+                type="text"
+                class="ds-input"
+                placeholder="Name"
+                id="name"
+                name="name"
+              />
+            </div>
+            <div class="ds-input-group">
+              <input
+                type="text"
+                class="ds-input"
+                placeholder="Email address"
+                id="email"
+                name="email"
+              />
+            </div>
+            <div class="ds-input-group">
+              <input
+                type="text"
+                class="ds-input"
+                placeholder="Phone"
+                id="phone"
+                name="phone"
+                inputmode="numeric"
+              />
+            </div>
+            <div class="ds-input-group">
+              <textarea
+                class="ds-input ds-input--textarea"
+                placeholder="Your message"
+                id="message"
+              ></textarea>
+            </div>
+            <div class="ds-input-group">
+              <button type="submit" class="ds-btn ds-btn--white">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
 
-  Name
-  Email address
-  Phone
-  Your message
-  Submit
-
-  Canada
-  See location
-
-  Australia
-  See location
-
-  United Kingdom
-  See location
-
-
-  <script src="./build/js/app.js"></script>
-</body>
+      <section class="ds-features ds-section ds-section--mb-9">
+        <ul class="ds-features__items">
+          <li class="ds-features__item ds-features__item--md-col">
+            <div
+              class="ds-features__item-image-container ds-features__item-image-container--top"
+            >
+              <img
+                src="/assets/shared/desktop/illustration-canada.svg"
+                alt="Canada"
+                class="ds-features__item-image"
+                width="202"
+                height="202"
+              />
+            </div>
+            <div class="ds-features__detail">
+              <h3 class="ds-heading ds-heading--h3 ds-features__item-title">
+                Canada
+              </h3>
+              <a href="#" class="ds-btn ds-btn--peach" role="button"
+                >See location</a
+              >
+            </div>
+          </li>
+          <li class="ds-features__item ds-features__item--md-col">
+            <div
+              class="ds-features__item-image-container ds-features__item-image-container--left"
+            >
+              <img
+                src="/assets/shared/desktop/illustration-australia.svg"
+                alt="Australia"
+                class="ds-features__item-image"
+                width="202"
+                height="202"
+              />
+            </div>
+            <div class="ds-features__detail">
+              <h3 class="ds-heading ds-heading--h3 ds-features__item-title">
+                Australia
+              </h3>
+              <a href="#" class="ds-btn ds-btn--peach" role="button"
+                >See location</a
+              >
+            </div>
+          </li>
+          <li class="ds-features__item ds-features__item--md-col">
+            <div
+              class="ds-features__item-image-container ds-features__item-image-container--bottom"
+            >
+              <img
+                src="/assets/shared/desktop/illustration-united-kingdom.svg"
+                alt="United Kingdom"
+                class="ds-features__item-image"
+                width="202"
+                height="202"
+              />
+            </div>
+            <div class="ds-features__detail">
+              <h3 class="ds-heading ds-heading--h3 ds-features__item-title">
+                United Kingdom
+              </h3>
+              <a href="#" class="ds-btn ds-btn--peach" role="button"
+                >See location</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div
+      id="footer"
+      class="ds-footer-container ds-footer-container--contact"
+    ></div>
+    <script src="./build/js/app.js"></script>
+  </body>
 </html>

@@ -20,6 +20,11 @@
     padding-right: 1.5rem;
   }
 }
+.ds-footer-container--contact {
+  .ds-footer {
+    padding-top: 4rem !important;
+  }
+}
 .ds-footer__top {
   display: flex;
   align-items: center;
@@ -101,7 +106,8 @@
 
     &:nth-last-child(2) {
       .ds-footer__section-line {
-        &:nth-child(2), &:last-child {
+        &:nth-child(2),
+        &:last-child {
           font-weight: normal !important;
         }
       }
