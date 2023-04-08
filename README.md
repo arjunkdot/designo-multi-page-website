@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/arjunkdot/designo-multi-page-website)
-- Live Site URL: [Netlify](designo-arjunkdot.netlify.app)
+- Live Site URL: [Netlify](https://designo-arjunkdot.netlify.app)
 
 
 ### Built with
